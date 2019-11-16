@@ -1,4 +1,4 @@
-@import "config";
+@import "config.scss";
 
 * {
   padding: 0;
@@ -25,3 +25,5 @@ img { /* stylelint-disable-line */
 }
 
 // TODO import
+@import "index.scss";
+@import "fyrirlestur.scss";
