@@ -15,7 +15,6 @@
     "babel-watch": "babel src --out-dir dist --watch",
     "rollup": "rollup -c",
     "rollup-watch": "rollup -c -w"
-    
   },
   "keywords": [],
   "author": "",
