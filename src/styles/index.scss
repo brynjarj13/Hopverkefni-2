@@ -1,3 +1,5 @@
+@import "config";
+
 header{
     background-image: url(/img/header.jpg);
     background-position: center;
@@ -6,22 +8,64 @@ header{
     background-attachment: fixed;
     width: 100%;
     height: 100%;
-    text-align: center;
-    position: absolute;
-    padding-bottom: 16px;
-    display: flex;
+    justify-content: center;
+    background-position: absolute;
+    padding-bottom: 125px;
+    padding-top: 125px;
+    display: block;
   }
   
   h1{
-    padding-top: 10px;
     display: flex;
     justify-content: center;
     margin-bottom: 16px;
+    padding-top: 10px;
   }
 
   h2{
-    padding-top: 10px;
     display: flex;
     justify-content: center;
     margin-bottom: 16px;
+    padding-top: 10px;
+    font-size: 48;
+  }
+  
+  .main__index {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .buttons{
+      display: flex;
+      justify-content: center;
+  }
+
+  .buttonlist{
+      display: inline-flex;
+      justify-content: space-between;
+      list-style: none;
+      font-size: 16px;
+  }
+
+  .html{
+      font-size: 24px;
+      padding: 10px;
+      border-radius: 17%;
+  }
+
+  .css{
+      margin-left: $gutter;
+      font-size: 24px;
+      padding: 10px;
+      border-radius: 17%;
+  }
+
+  .javascript{
+      margin-left: $gutter;
+      font-size: 24px;
+      padding: 10px;
+      border-radius: 17%;
   }
