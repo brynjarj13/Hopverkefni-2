@@ -2,7 +2,7 @@ import { empty } from './helpers';
 
 export default class List {
   constructor() {
-    this.container = document.querySelector('.list');
+    this.container = document.querySelector('.list'); //list.scss
     this.url = 'lectures.json';
   }
   setContent(...content) {
@@ -26,12 +26,8 @@ export default class List {
       });
   }
 
+
   load() {
-    this.loadLectures()
-      .catch((error) => {
-        console.error(error);
-        this.setError(error.message);
-      });
     empty(this.container);
   }
 }
