@@ -28,6 +28,7 @@ export default class List {
 
 
   load() {
+    this.loadLectures()
     empty(this.container);
   }
 }

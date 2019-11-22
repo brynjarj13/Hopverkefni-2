@@ -1,75 +1,75 @@
 @import "config";
 
 header{
-    background-image: url(/img/header.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    background-position: absolute;
-    padding-bottom: 125px;
-    padding-top: 125px;
-    display: block;
-  }
+  background-image: url(/img/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  background-position: absolute;
+  padding-bottom: 125px;
+  padding-top: 125px;
+  display: block;
+}
 .title{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-  h1{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 16px;
-    padding-top: 10px;
-  }
+h1{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  padding-top: 10px;
+}
 
-  h2{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 16px;
-    padding-top: 10px;
-    font-size: 48;
-  }
-  
-  .main__index {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+h2{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  padding-top: 10px;
+  font-size: 48;
+}
 
-  .buttons{
-      display: flex;
-      justify-content: center;
-  }
+.main__index {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-  .buttonlist{
-      display: inline-flex;
-      justify-content: space-between;
-      list-style: none;
-      font-size: 16px;
-  }
+.buttons{
+  display: flex;
+  justify-content: center;
+}
 
-  .html{
-      font-size: 24px;
-      padding: 10px;
-      border-radius: 17%;
-  }
+.buttonlist{
+  display: inline-flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 16px;
+}
 
-  .css{
-      margin-left: $gutter;
-      font-size: 24px;
-      padding: 10px;
-      border-radius: 17%;
-  }
+.html{
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 17%;
+}
 
-  .javascript{
-      margin-left: $gutter;
-      font-size: 24px;
-      padding: 10px;
-      border-radius: 17%;
-  }
+.css{
+  margin-left: $gutter;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 17%;
+}
+
+.javascript{
+  margin-left: $gutter;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 17%;
+}
