@@ -1,15 +1,13 @@
 @import "config";
 
-header{
-  background-image: url(/img/header.jpg);
+.header__index{
+  background-image: url('../img/header.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
   height: 100%;
-  justify-content: center;
-  background-position: absolute;
   padding-bottom: 125px;
   padding-top: 125px;
   display: block;
