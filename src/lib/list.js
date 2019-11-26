@@ -19,9 +19,6 @@ export default class List {
   loadLectures() {
     return fetch(this.url)
       .then((res) => {
-        if (!res.ok) {
-          throw new Error('Gat ekki sótt fyrirlestra');
-        }
         return res.json();
       });
   }
