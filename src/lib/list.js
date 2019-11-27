@@ -51,8 +51,9 @@ const javascript__button =
   document.querySelector('javascript__button');
 javascript__button.addEventListener('click', toggleJavascript);
 
-let i = 0;
+let i = 1;
 function toggleHtml() {
+  i++;
   if (i % 2 === 0) {
     adds
   }
@@ -61,8 +62,9 @@ function toggleHtml() {
   }
 }
 
-let y = 0;
+let y = 1;
 function toggleCss() {
+  y++;
   if (y % 2 === 0) {
     adds
   }
@@ -71,8 +73,9 @@ function toggleCss() {
   }
 }
 
-let x = 0;
+let x = 1;
 function toggleJavascript() {
+  x++;
   if (x % 2 === 0) {
     adds
   }
