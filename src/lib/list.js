@@ -32,9 +32,9 @@ let listcontainer = document.getElementsByClassName('list');
 const button = document.querySelector('button');
 function listRemover(){
   /*function that removes all lectures once before showing the one selected*/
-    while (listcontainer.firstChild) {
-      listcontainer.removeChild(listcontainer.firstChild);
-    }
+  while (listcontainer.firstChild) {
+    listcontainer.removeChild(listcontainer.firstChild);
+  }
   button.removeEventListener('click', listRemover);
 }
 button.addEventListener('click', listRemover);
