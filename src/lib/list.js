@@ -1,5 +1,6 @@
 import { empty } from './helpers';
 
+const listcontainer = document.getElementsByClassName('list');
 export default class List {
   
   constructor() {
@@ -65,7 +66,7 @@ export default class List {
     });
   }
 }
-const listcontainer = document.getElementsByClassName('list');
+
 const button = document.querySelector('button');
 function listRemover(){
   /*function that removes all lectures once before showing the one selected*/
