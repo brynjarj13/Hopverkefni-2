@@ -7,7 +7,7 @@ Ester Jenný Birgisdóttir (ejb7@hi.is)
 
 ## Upplýsingar um hvernig keyra skuli verkefnið:
 
-Það þarf að keyra `npm install` í terminal til að setja upp pakkana sem við notuðum. Til að keyra verkefnið þarf að nota skipunina `npm run dev`, það keyrir samtímis skipunirnar `npm:sass`, `npm:sass-watch`, `npm:rollup-watch` og `npm:browser-sync`. Þar sem við erum með gögn í `lectures.json` skrá sem þarf að sækja með _ajax_, þá er nauðsynlegt að vera með `browser-sync`. (rollup og babel.)
+Það þarf að keyra `npm install`  í terminal til að setja upp pakkana sem við notuðum. Til að keyra verkefnið þarf að nota skipunina `npm run dev`, það keyrir samtímis skipunirnar `npm:sass`, `npm:sass-watch`, `npm:rollup-watch` og `npm:browser-sync`. Þar sem við erum með gögn í `lectures.json` skrá sem þarf að sækja með _ajax_, þá er nauðsynlegt að vera með `browser-sync`. (rollup og babel. eslint og stylelint)
 
 ## Lýsingu á uppsetningu verkefnis, hvernig því er skipt í möppur, hvernig CSS og JavaScript er skipulagt og fleira sem á við
 
