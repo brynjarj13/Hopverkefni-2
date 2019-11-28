@@ -28,7 +28,7 @@ export default class List {
     empty(this.container);
   }
 }
-let listcontainer = document.querySelector('list');
+let listcontainer = document.getElementsByClassName('list');
 const button = document.querySelector('button');
 function listRemover(){
   /*function that removes all lectures once before showing the one selected*/
@@ -40,15 +40,15 @@ function listRemover(){
 button.addEventListener('click', listRemover);
 
 const html__button =
-  document.querySelector('html__button');
+  document.getElementsByClassName('html__button');
 html__button.addEventListener('click', toggleHtml);
 
 const css__button =
-  document.querySelector('css__button');
+  document.getElementsByClassName('css__button');
 css__button.addEventListener('click', toggleCss);
 
 const javascript__button =
-  document.querySelector('javascript__button');
+  document.getElementsByClassName('javascript__button');
 javascript__button.addEventListener('click', toggleJavascript);
 
 let i = 1;
@@ -83,3 +83,45 @@ function toggleJavascript() {
     removes
   }
 }
+
+const listOuterbox = document.createElement('div');
+listOuterbox.setAttribute('class','outerbox');
+
+const listPicbox = document.createElement('div');
+listPicbox.setAttribute('class','picbox');
+
+const listTextbox = document.createElement('div');
+listTextbox.setAttribute('class','textbox');
+
+const listThumbnail = document.createElement('img');
+listThumbnail.setAttribute('class','thumbnail');
+listThumbnail.setAttribute('src','enter link');/* here a link to the thumbnail that it gets is needed*/
+listPicbox.appendChild(listThumbnail);
+
+const listTitle = document.createElement('p');
+listTitle.setAttribute('class','title');
+const title = document.createTextNode('');/*add link to title text*/
+listTitle.appendChild(title);
+listTextbox.appendChild(listTitle);
+
+const listCategory = document.createElement('p');
+listCategory.setAttribute('class','category');
+const category = document.createTextNode('');/*add link to category text*/
+listCategory.appendChild(category);
+listTextbox.appendChild(listCategory);
+listOuterbox.appendChild(listPicbox);
+listOuterbox.appendChild(listTextbox);
+listcontainer.appendChild(listOuterbox)
+
+
+
+
+
+
+
+
+
+
+
+
+
