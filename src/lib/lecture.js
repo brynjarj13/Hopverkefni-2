@@ -39,6 +39,6 @@ export default class Lecture {
         default:
         item = el('div', i.type);
       }
-    }
+    });
   }
 }
