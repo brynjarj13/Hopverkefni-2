@@ -1,3 +1,21 @@
+#Hópverkefni 2 í vefforritun 1
+
+Upplýsingar um alla sem unnu verkefnið:
+
+Brynjar Aron Jónsson (baj15@hi.is)
+Ester Jenný Birgisdóttir (ejb7@hi.is)
+
+Upplýsingar um hvernig keyra skuli verkefnið:
+
+Það þarf að keyra 'npm install' í terminal til að setja upp pakkana sem við notuðum. Til að keyra verkefnið þarf að nota skipunina 'npm run dev', það keyrir samtímis skipunirnar 'npm:sass, npm:sass-watch, npm:rollup-watch og npm:browser-sync'. Þar sem við erum með gögn í 'lectures.json' skrá sem þarf að sækja með _ajax_, þá er nauðsynlegt að vera með 'browser-sync'. (rollup og babel.)
+
+Lýsingu á uppsetningu verkefnis, hvernig því er skipt í möppur, hvernig CSS og JavaScript er skipulagt og fleira sem á við
+
+Verkefnið er skrifað með html og útlit er stýrt með css. JavaScript gerir síðunni af lifandi vefsíðu. (Bætta meira í). Við erum með möppu sem kallast 'src' sem inniheldur allar JavaScript og scss skrár. Í 'src/lib' eru allar javascript skrár geymdar, og í 'src/styles' eru scss skrárnar geymdar. Þessar upplysingar eru settar saman í eina skrá í möppu sem kallast 'dist'. Html skjölin okkar sækja svo í allt sem við höfum skrifað í javascript úr skráni 'dist/bundle.js'. Einnig erum við með 'dist/styles.css' sem er líka tengt við htlm skjalið okkar. styles.css fær upplysingar úr styles.scss, sem þýðir allar scss skrárnar í css.
+
+
+
+
 # Hópverkefni 2
 
 Verkefnið felst í því að smíða prótótýpu af fyrirlestravef fyrir vefforritun. Gefin eru gögn sem unnin eru uppúr námsefni vetrarins.
