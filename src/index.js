@@ -3,12 +3,11 @@ import Lecture from './lib/lecture';
 
 document.addEventListener('DOMContentLoaded', () => {
   const page = document.querySelector('body');
-  const isLecturePage = page.classList.contains('lecture-page'); //fyrirlestur.html
+  const isLecturePage = page.classList.contains('lecture-page'); // fyrirlestur.html
 
   if (isLecturePage) {
     const lecture = new Lecture();
     lecture.load();
-
   } else {
     const list = new List();
     list.load();

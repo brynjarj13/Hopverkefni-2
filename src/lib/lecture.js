@@ -1,43 +1,40 @@
 export default class Lecture {
-  constructor (){
+  constructor() {
     this.url = 'lectures.json';
   }
 
   loadLectures() {
     return fetch(this.url)
-    .then((res) => {
-      return res.json();
-    });
+      .then(res => res.json());
   }
 
   createLecture(content) {
-
     content.forEach((i) => {
-      let item;
+      let item;/* esllint-disable-line */
       switch (i.type) {
         case 'youtube':
-        item = youtube(i.data);
-        break;
+          item = youtube(i.data); /* esllint-disable-line */
+          break;
         case 'text':
-        item = text(i.data);
-        break;
+          item = text(i.data);/* esllint-disable-line */
+          break;
         case 'list':
-        item = list(i.data);
-        break;
+          item = list(i.data);/* esllint-disable-line */
+          break;
         case 'heading':
-        item = heading(i.data);
-        break;
+          item = heading(i.data);/* esllint-disable-line */
+          break;
         case 'code':
-        item = code(i.data);
-        break;
+          item = code(i.data);/* esllint-disable-line */
+          break;
         case 'quote':
-        item = quote(i.data, i.attribute);
-        break;
+          item = quote(i.data, i.attribute);/* esllint-disable-line */
+          break;
         case 'image':
-        item = image(i.data, i.caption);
-        break;
+          item = image(i.data, i.caption);/* esllint-disable-line */
+          break;
         default:
-        item = el('div', i.type);
+          item = el('div', i.type);/* esllint-disable-line */
       }
     });
   }

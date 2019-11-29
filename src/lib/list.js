@@ -2,9 +2,8 @@ import { empty } from './helpers';
 
 const listcontainer = document.getElementsByClassName('list');
 export default class List {
-  
   constructor() {
-    this.container = document.querySelector('.list'); //list.scss
+    this.container = document.querySelector('.list'); // list.scss
     this.url = 'lectures.json';
   }
 
@@ -22,54 +21,52 @@ export default class List {
 
   loadLectures() {
     return fetch(this.url)
-      .then((res) => {
-        return res.json();
-      });
+      .then(res => res.json());
   }
 
   load() {
-    this.loadLectures()
+    this.loadLectures();
     empty(this.container);
   }
 
-  createList(lectures)  {
-    lectures.forEach((i) =>  {
+  createList(lectures) {
+    lectures.forEach((i) => {
       const listOuterbox = document.createElement('div');
       listOuterbox.setAttribute('class', 'outerbox');
       listOuterbox.setAttribute('id', i.category);
-  
+
       const listPicbox = document.createElement('div');
       listPicbox.setAttribute('class', 'picbox');
-  
+
       const listTextbox = document.createElement('div');
       listTextbox.setAttribute('class', 'textbox');
-  
+
       const listThumbnail = document.createElement('img');
       listThumbnail.setAttribute('class', 'thumbnail');
-      listThumbnail.setAttribute('src', i.thumbnail);/* here a link to the thumbnail that it gets is needed*/
+      listThumbnail.setAttribute('src', i.thumbnail);/* here a link to the thumbnail that it gets is needed */
       listPicbox.appendChild(listThumbnail);
-  
+
       const listTitle = document.createElement('p');
       listTitle.setAttribute('class', 'title');
-      const textTitle = document.createTextNode(i.title);/*add link to title text*/
+      const textTitle = document.createTextNode(i.title);/* add link to title text */
       listTitle.appendChild(textTitle);
       listTextbox.appendChild(listTitle);
-  
+
       const listCategory = document.createElement('p');
       listCategory.setAttribute('class', 'category');
-      const textCategory = document.createTextNode(i.category);/*add link to category text*/
+      const textCategory = document.createTextNode(i.category);/* add link to category text */
       listCategory.appendChild(textCategory);
       listTextbox.appendChild(listCategory);
       listOuterbox.appendChild(listPicbox);
       listOuterbox.appendChild(listTextbox);
-      listcontainer.appendChild(listOuterbox)
+      listcontainer.appendChild(listOuterbox);
     });
   }
 }
 
 const button = document.querySelector('button');
-function listRemover(){
-  /*function that removes all lectures once before showing the one selected*/
+function listRemover() {
+  /* function that removes all lectures once before showing the one selected */
   while (listcontainer.firstChild) {
     listcontainer.removeChild(listcontainer.firstChild);
   }
@@ -77,60 +74,41 @@ function listRemover(){
 }
 button.addEventListener('click', listRemover);
 
-const html__button =
-  document.getElementsByClassName('html__button');
-html__button.addEventListener('click', toggleHtml);
-
-const css__button =
-  document.getElementsByClassName('css__button');
-css__button.addEventListener('click', toggleCss);
-
-const javascript__button =
-  document.getElementsByClassName('javascript__button');
-javascript__button.addEventListener('click', toggleJavascript);
-
 let i = 1;
 function toggleHtml() {
-  i++;
+  i += 1;
   if (i % 2 === 0) {
-    adds
-  }
-  else {
-    removes
+    /* adds */
+  } else {
+    /* removes */
   }
 }
 
 let y = 1;
 function toggleCss() {
-  y++;
+  y += 1;
   if (y % 2 === 0) {
-    adds
-  }
-  else {
-    removes
+    /* adds */
+  } else {
+    /* removes */
   }
 }
 
 let x = 1;
 function toggleJavascript() {
-  x++;
+  x += 1;
   if (x % 2 === 0) {
-    adds
-  }
-  else {
-    removes
+    /* adds */
+  } else {
+    /* removes */
   }
 }
 
+const htmlButton = document.getElementsByClassName('html__button');
+htmlButton.addEventListener('click', toggleHtml);
 
+const cssButton = document.getElementsByClassName('css__button');
+cssButton.addEventListener('click', toggleCss);
 
-
-
-
-
-
-
-
-
-
-
+const javascriptButton = document.getElementsByClassName('javascript__button');
+javascriptButton.addEventListener('click', toggleJavascript);
