@@ -51,25 +51,28 @@ h2 {
   display: inline-flex;
   justify-content: space-between;
   list-style: none;
-  font-size: 16px;
+  font-size: $font;
 }
 
-.html__button {
-  font-size: 24px;
-  padding: 10px;
+.html__button{
+  font-size: $font * 1.5;
+  padding: $gutter / 2;
   border-radius: 17%;
+  font-family: $font-main;
 }
 
 .css__button {
   margin-left: $gutter;
-  font-size: 24px;
-  padding: 10px;
+  font-size: $font * 1.5;
+  padding: $gutter / 2;
   border-radius: 17%;
+  font-family: $font-main;
 }
 
 .javascript__button {
   margin-left: $gutter;
-  font-size: 24px;
+  font-size: $font * 1.5;
   padding: 10px;
   border-radius: 17%;
+  font-family: $font-main;
 }
