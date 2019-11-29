@@ -2,12 +2,11 @@ import { empty } from './helpers';
 
 const listcontainer = document.getElementsByClassName('list');
 export default class List {
-  
+
   constructor() {
     this.container = document.querySelector('.list'); //list.scss
     this.url = 'lectures.json';
   }
-
 
   setContent(...content) {
     empty(this.container);
@@ -37,24 +36,24 @@ export default class List {
       const listOuterbox = document.createElement('div');
       listOuterbox.setAttribute('class', 'outerbox');
       listOuterbox.setAttribute('id', i.category);
-  
+
       const listPicbox = document.createElement('div');
       listPicbox.setAttribute('class', 'picbox');
-  
+
       const listTextbox = document.createElement('div');
       listTextbox.setAttribute('class', 'textbox');
-  
+
       const listThumbnail = document.createElement('img');
       listThumbnail.setAttribute('class', 'thumbnail');
       listThumbnail.setAttribute('src', i.thumbnail);/* here a link to the thumbnail that it gets is needed*/
       listPicbox.appendChild(listThumbnail);
-  
+
       const listTitle = document.createElement('p');
       listTitle.setAttribute('class', 'title');
       const textTitle = document.createTextNode(i.title);/*add link to title text*/
       listTitle.appendChild(textTitle);
       listTextbox.appendChild(listTitle);
-  
+
       const listCategory = document.createElement('p');
       listCategory.setAttribute('class', 'category');
       const textCategory = document.createTextNode(i.category);/*add link to category text*/
@@ -121,16 +120,3 @@ function toggleJavascript() {
     removes
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
