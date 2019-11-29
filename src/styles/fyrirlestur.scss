@@ -1,15 +1,15 @@
 @import "config";
 
-.header__fyrirlestur{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 125px;
-    padding-top: 125px;
+.header__fyrirlestur {
     display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    padding-top: 125px;
+    padding-bottom: 125px;
   }
 
 .main__fyrirlestur {
