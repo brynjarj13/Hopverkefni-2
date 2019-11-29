@@ -20,35 +20,35 @@
     padding-left: $gutter;
   }
 
-  h1 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: $font;
-    padding-top: $gutter/2;
-  }
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $font;
+  padding-top: $gutter/2;
+}
 
-  h2 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: $font;
-    padding-top: $gutter/2;
-    font-size: 3*$font;
-  }
+h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $font;
+  padding-top: $gutter/2;
+  font-size: 3*$font;
+}
 
-  .footer__fyrirlestur {
-    display: flex;
-    justify-content: center;
-  }
+.footer__fyrirlestur {
+  display: flex;
+  justify-content: center;
+}
 
-  .finish__lecture__button {
-    font-size: $font;
-    border: none;
-    background-color: $color7;
-  }
+.finish__lecture__button {
+  font-size: $font;
+  border: none;
+  background-color: $color7;
+}
 
-  .back__button {
-    font-size: $font;
-    margin-top: $gutter;
-    border: none;
-    background-color: $color7;
-  }
+.back__button {
+  font-size: $font;
+  margin-top: $gutter;
+  border: none;
+  background-color: $color7;
+}

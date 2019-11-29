@@ -2,15 +2,15 @@
 
 .header__index {
   display: block;
-  background-image: url('../img/header.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
   width: 100%;
-  background-attachment: fixed;
-  background-size: cover;
   height: 100%;
   padding-top: 125px;
   padding-bottom: 125px;
+  background-image: url("../img/header.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .title {
@@ -22,24 +22,24 @@
 h1 {
   display: flex;
   justify-content: center;
-  margin-bottom: $font;
   padding-top: $gutter/2;
+  margin-bottom: $font;
   font-size: 3*$font;
 }
 
 h2 {
   display: flex;
   justify-content: center;
-  margin-bottom: $font;
   padding-top: $gutter/2;
+  margin-bottom: $font;
 }
 
 .main__index {
-  margin: 0 auto;
   max-width: $max-width;
   padding-top: $gutter;
-  padding-left: $gutter;
   padding-right: $gutter;
+  padding-left: $gutter;
+  margin: 0 auto;
 }
 
 .buttons {
@@ -50,29 +50,29 @@ h2 {
 .buttonlist {
   display: inline-flex;
   justify-content: space-between;
-  list-style: none;
   font-size: $font;
+  list-style: none;
 }
 
-.html__button{
-  font-size: $font * 1.5;
+.html__button {
   padding: $gutter / 2;
-  border-radius: 17%;
   font-family: $font-main;
+  font-size: $font * 1.5;
+  border-radius: 17%;
 }
 
 .css__button {
-  margin-left: $gutter;
-  font-size: $font * 1.5;
   padding: $gutter / 2;
-  border-radius: 17%;
+  margin-left: $gutter;
   font-family: $font-main;
+  font-size: $font * 1.5;
+  border-radius: 17%;
 }
 
 .javascript__button {
-  margin-left: $gutter;
-  font-size: $font * 1.5;
   padding: 10px;
-  border-radius: 17%;
+  margin-left: $gutter;
   font-family: $font-main;
+  font-size: $font * 1.5;
+  border-radius: 17%;
 }
