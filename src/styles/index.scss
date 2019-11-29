@@ -20,24 +20,24 @@
 h1{
   display: flex;
   justify-content: center;
-  margin-bottom: 16px;
-  padding-top: 10px;
-  font-size: 48px;
+  margin-bottom: $font;
+  padding-top: $gutter/2;
+  font-size: 3*$font;
 }
 
 h2{
   display: flex;
   justify-content: center;
-  margin-bottom: 16px;
-  padding-top: 10px;
+  margin-bottom: $font;
+  padding-top: $gutter/2;
 }
 
 .main__index {
   margin: 0 auto;
-  max-width: 1200px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: $max-width;
+  padding-top: $gutter;
+  padding-left: $gutter;
+  padding-right: $gutter;
 }
 
 .buttons{
