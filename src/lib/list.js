@@ -7,7 +7,6 @@ export default class List {
     this.url = 'lectures.json';
   }
 
-
   setContent(...content) {
     empty(this.container);
 
