@@ -19,7 +19,7 @@
   justify-content: center;
 }
 
-h1 {
+.bigTitle {
   display: flex;
   justify-content: center;
   padding-top: $gutter/2;
@@ -27,7 +27,7 @@ h1 {
   font-size: 3*$font;
 }
 
-h2 {
+.smallTitle {
   display: flex;
   justify-content: center;
   padding-top: $gutter/2;

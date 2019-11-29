@@ -4,35 +4,20 @@
   display: block;
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
   padding-top: 125px;
   padding-bottom: 125px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .main__fyrirlestur {
   max-width: $max-width;
-  margin: 0 auto;
   padding-top: $gutter;
   padding-right: $gutter;
   padding-left: $gutter;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: $font;
-  padding-top: $gutter/2;
-}
-
-h2 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: $font;
-  padding-top: $gutter/2;
-  font-size: 3*$font;
+  margin: 0 auto;
 }
 
 .footer__fyrirlestur {
@@ -42,13 +27,14 @@ h2 {
 
 .finish__lecture__button {
   font-size: $font;
-  border: none;
   background-color: $color7;
+  border: hidden;
 }
 
 .back__button {
-  font-size: $font;
   margin-top: $gutter;
-  border: none;
+  font-size: $font;
   background-color: $color7;
+  border: hidden;
+
 }
