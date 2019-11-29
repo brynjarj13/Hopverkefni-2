@@ -56,6 +56,7 @@ h2{
   font-size: $font * 1.5;
   padding: $guuter / 2;
   border-radius: 17%;
+  font-family: $font-main;
 }
 
 .css__button{
@@ -63,6 +64,7 @@ h2{
   font-size: $font * 1.5;
   padding: $gutter / 2;
   border-radius: 17%;
+  font-family: $font-main;
 }
 
 .javascript__button{
@@ -70,4 +72,5 @@ h2{
   font-size: $font * 1.5;
   padding: 10px;
   border-radius: 17%;
+  font-family: $font-main;
 }
