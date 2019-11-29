@@ -1,24 +1,24 @@
 @import "config";
 
 .header__fyrirlestur {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    padding-top: 125px;
-    padding-bottom: 125px;
-  }
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 125px;
+  padding-bottom: 125px;
+}
 
 .main__fyrirlestur {
-    max-width: $max-width;
-    margin: 0 auto;
-    padding-top: $gutter;
-    padding-right: $gutter;
-    padding-left: $gutter;
-  }
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-top: $gutter;
+  padding-right: $gutter;
+  padding-left: $gutter;
+}
 
 h1 {
   display: flex;
