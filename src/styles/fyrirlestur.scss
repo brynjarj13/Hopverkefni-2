@@ -20,14 +20,14 @@
     padding-right: $gutter;
   }
 
-  h1{
+  h1 {
     display: flex;
     justify-content: center;
     margin-bottom: $font;
     padding-top: $gutter/2;
   }
 
-  h2{
+  h2 {
     display: flex;
     justify-content: center;
     margin-bottom: $font;
@@ -35,21 +35,20 @@
     font-size: 3*$font;
   }
 
-  .footer__fyrirlestur{
+  .footer__fyrirlestur {
     display: flex;
     justify-content: center;
   }
 
-  .finish__lecture__button{
+  .finish__lecture__button {
     font-size: $font;
     border: none;
     background-color: $color7;
   }
 
-  .back__button{
+  .back__button {
     font-size: $font;
     margin-top: $gutter;
     border: none;
     background-color: $color7;
-
   }
