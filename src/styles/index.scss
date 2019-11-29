@@ -15,6 +15,7 @@
 
 .title {
   display: flex;
+  font-size: 2*$font;
   flex-direction: column;
   justify-content: center;
 }
@@ -24,6 +25,7 @@
   justify-content: center;
   padding-top: $gutter/2;
   margin-bottom: $font;
+  font-family: $font-heading;
   font-size: 3*$font;
 }
 
@@ -32,6 +34,7 @@
   justify-content: center;
   padding-top: $gutter/2;
   margin-bottom: $font;
+  font-family: $font-heading;
 }
 
 .main__index {
